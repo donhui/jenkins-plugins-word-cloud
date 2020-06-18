@@ -1,4 +1,4 @@
-# jenkins-plugins-word-cloud
+# Jenkins Plugins Word Cloud
 Generate word cloud for jenkins plugins.
 
 # Word Cloud Preview
