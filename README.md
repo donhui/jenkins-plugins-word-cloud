@@ -3,7 +3,9 @@ Generate word cloud for jenkins plugins.
 
 # Word Cloud Preview
 
-![word-cloud.png](word-cloud.png)
+![jenkins-logo-word-cloud.png](jenkins-logo-word-cloud.png)
+
+![kongfu-word-cloud](kongfu-word-cloud.png)
 
 # Usage
 
