@@ -1,0 +1,4 @@
+wordcloud
+matplotlib
+numpy
+PIL
