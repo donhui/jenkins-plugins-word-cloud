@@ -11,10 +11,14 @@ Generate word cloud for jenkins plugins.
 
 The `update-center.json` can be downloaded from [update-center.json](https://updates.jenkins-ci.org/current/update-center.json).
 
-## Step2. generate jenkins-plugins.txt
+## Step2. install python modules
+
+Install python modules with pip: `pip install -r requirments.txt`.
+
+## Step3. generate jenkins-plugins.txt
 
 Execute the `generate-jenkins-plugins-txt.py` script to generate `jenkins-plugins.txt`.
 
-## Step3. generate word-cloud.png
+## Step4. generate word-cloud.png
 
 Execute the `genarate-word-cloud.py` script to generate `word-cloud.png`.
