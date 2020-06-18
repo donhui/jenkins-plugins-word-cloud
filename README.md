@@ -1,5 +1,9 @@
 # jenkins-plugins-word-cloud
-Generate word cloud for jenkins plugins
+Generate word cloud for jenkins plugins.
+
+# Word Cloud Preview
+
+![word-cloud.png](word-cloud.png)
 
 # Usage
 
