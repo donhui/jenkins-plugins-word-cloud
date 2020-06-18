@@ -19,12 +19,13 @@ def generate_word_cloud_image(background_image):
     plt.show()
 
     # save to file
-    wc.to_file(image_name.replace(".png", "-") + 'word-cloud.png')
+    background_image = str(background_image).split("/")[-1].replace(".png", "")
+    wc.to_file("word-cloud-img/" + background_image + '-word-cloud.png')
 
 
 if __name__ == "__main__":
     with open('jenkins-plugins.txt') as f:
         text = f.read()
 
-        for image_name in ["kongfu.png", "jenkins-logo.png"]:
+        for image_name in ["background-img/kongfu.png", "background-img/jenkins-logo.png"]:
             generate_word_cloud_image(background_image=image_name)
