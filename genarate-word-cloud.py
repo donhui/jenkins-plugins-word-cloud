@@ -6,12 +6,12 @@ import numpy as np
 from PIL import Image
 
 
-def generate_word_cloud_image(background_image):
+def generate_word_cloud_image(background_image, words_text):
     # mask
     mask = np.array(Image.open(background_image))
 
     # generate word cloud
-    wc = WordCloud(mask=mask, scale=1.5, mode='RGBA', background_color="white", max_words=2000).generate(text=text)
+    wc = WordCloud(mask=mask, scale=1.5, mode='RGBA', background_color="white", max_words=2000).generate(text=words_text)
 
     # show word cloud
     plt.imshow(wc, interpolation='bilinear')
@@ -28,4 +28,4 @@ if __name__ == "__main__":
         text = f.read()
 
         for image_name in ["background-img/kongfu.png", "background-img/jenkins-logo.png"]:
-            generate_word_cloud_image(background_image=image_name)
+            generate_word_cloud_image(background_image=image_name, text=text)
